@@ -1,0 +1,19 @@
+header
+{	
+
+width:1000px;
+height: 100px;
+margin-top:10px;
+border:solid 1px #FF8224;;
+}
+#logo
+{
+font-weight: bold;
+margin-top: 20px;
+float: left;
+color:#FF8224;
+}
+#top{
+float:right;
+
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+	/*body{
+	height: 500px;
+	background-image: linear-gradient(to right,red,yellow,lime,blue,purple);
+}*/
+div{
+	width: 200px;
+	height: 50px;
+	background-color: yellow;
+	border: 1px solid black;
+	transition: width 2s ,height 2s ;
+
+}
+div:hover{
+	width: 700px;
+	transform: rotate(360deg);
+
+}
+
+div.rotate{
+	background-color: lime;
+	border: 1px solid black;
+	transform:rotate(150deg);
+
+}
+div.trans{
+	background-color: skyblue;
+	border: 1px solid black;
+	transform:translate(600px,500px);
+}
+div.scale{
+	background-color: #aa5555;
+	border: 1px dashed black;
+	transform:scale(1,1);
+	margin: 30px;
+}
+div.skewx{
+	transform: skewX(30deg);
+
+}
+div.skewy{
+	transform: skewY(33deg);
+}
+div.skew{
+	transform: skew(30deg,10deg);
+}
+
+#div1{transition-timing-function: linear;}
+#div2{transition-timing-function: ease;}
+#div3{transition-timing-function: ease-in;}
+#div4{transition-timing-function: ease-out;}
+#div5{transition-timing-function: ease-in-out;}
+</style>
+</head>
+<body>
+<h1>transform</h1>
+
+	transfomr 중입니다....
+<div class="rotate">
+	rotate 중입니다...
+</div>
+<div class="trans">
+	trans 중입니다.
+</div>
+<div class="scale">
+	scale 세로로 두배커졌습니다.
+</div>
+<div class="skewx">
+	x축으로 비틀어진 모양
+</div>
+<div class="skewy">
+y축으로 비틀어진 모양
+	</div>
+	<div class="skew">
+x축으로 30도 ,y축으로 10도 비틀어진 모양
+	</div>
+
+
+<div id="div1">linear_같은속도
+</div><p>
+<div id="div2">
+ease 천천히 >전환>천천히</div><p>
+<div id="div3">ease_in 느리고<빠름
+</div><p>
+	<div id="div4">easy_out 빠르고 >느림
+</div><p>
+	
+	<div id="div5">ease-in-out 시작과 끝은 빠르게
+</div><p>
+
+</body>
+</html>
