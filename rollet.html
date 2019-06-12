@@ -3,7 +3,15 @@
 <html>
 <head>
 <meta content="IE=EmulateIE7" http-equiv=X-UA-Compatible />
-<title>Lunch Wheel</title>
+<title>오늘 뭐먹지</title>
+<style type="text/css">
+body{
+	
+		position: relative;
+		left: 370px;
+		top: 230px;
+}
+</style>
 <link href=https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css rel=stylesheet type=text/css>
 <script type=text/javascript src=https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js></script>
 <script type=text/javascript src=jquery.tinysort.min.js></script>
@@ -44,7 +52,7 @@ venues = {
 		"257424"  : "보쌈",
 		"512060"  : "감자탕",
 		"66244"   : "수육",
-		"352867"  : "오므라이스",
+		"352867"  : "오므라이스", 
 		"22493"   : "라면",
 		"268052"  : "샌드위치",
 		"5665"    : "돈까스",
@@ -125,7 +133,7 @@ venues = {
 
 		frames : 0,
 
-		centerX : 300,
+		centerX :500,
 		centerY : 300,
 
 		spin : function() {
@@ -395,7 +403,7 @@ venues = {
 <body>
 <div id=venues style=float:left><ul/></div>
 <div id=wheel>
-<canvas height=600 id=canvas width=1000></canvas>
+<canvas height=1000 id=canvas width=1000></canvas>
 </div>
 <div id=stats>
 <div id=counter></div>
