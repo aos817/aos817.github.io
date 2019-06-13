@@ -1,62 +1,59 @@
 li{
 list-style: none;
 }
-#topMenu { 
+#Menu { 
 height: 50px; width: 1000px; 
 position: relative; 
 } 
-#topMenu ul {
-
+#Menu ul {
 list-style-type: none; 
 margin: 0px; padding: 0px; 
 } 
-#topMenu ul li { 
-
+#Menu ul li { 
 color: white;
- background-color: #FF8224; 
+background-color: #FF8224; 
 float: left; line-height: 30px; 
-vertical-align: middle; 
+
 text-align: center; 
 -position: relative; 
  }
- .menuLink, .submenuLink { 
+.menudropdown, .submenu1,.submenu2 { 
 text-decoration:none;
-display: block; width: 330.79px; 
+display: block; 
+width: 330.79px; 
 font-size: 25px; 
 font-weight: bold; 
-
  } 
-.menuLink { 
-color: white; } .topMenuLi:hover .menuLink { 
-color: red; background-color: #4d4d4d; 
-} 
-.longLink { 
-width: 330px; 
+.menudropdown { 
+color: white; 
 }
- .submenuLink { 
-
- color: #2d2d2d; 
+ .dropdown:hover .menudropdown { 
+color: red; 
+background-color: #4d4d4d; 
+} 
+.submenu1 { 
+color: #2d2d2d; 
 background-color: white; 
-border: solid 1px black; 
-margin-right: -1px;
- } .submenu
- {  
+}
+.submenu2 { 
+color: #2d2d2d; 
+background-color: white; 
+ } 
+.submenudropdown {  
 position: absolute; 
 height: 0px; 
 overflow: hidden;
- transition: height .2s;
- -webkit-transition: height .2s;
- -moz-transition: height .2s; 
--o-transition: height .2s; 
+transition: height .2s;
 width: 1000px; 
- left: 0;  }
- .submenu li {
+left: 0;  
+}
+.submenudropdown li {
  display: inline-block;
- } 
-.topMenuLi:hover .submenu { 
+} 
+.dropdown:hover .submenudropdown { 
 height: 32px;
  } 
-.submenuLink:hover {
+.submenu2:hover,.submenu1:hover {
  color: white; 
 background-color: #FF8224;
  }
